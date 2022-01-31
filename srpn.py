@@ -217,11 +217,7 @@ def process_command(command):
                         print(int(stack1[-1]))
 
                     except:  # Case for empty stack
-                        # ---------CHECK THIS IS RIGHT------- #####
                         print("Stack empty.")
-
-                    # else:
-                    #     print("new problem")
 
                 elif command == "d":
                     if len(stack1) == 0:
@@ -306,8 +302,7 @@ def inline_string(string):
                     stack2.append(string[i])
     
     process_command(number)
-    while len(stack2) > 0: 
-        
+    while len(stack2) > 0:  
         process_command(stack2.pop()) # Execute operators in operator stack.
         
                 
@@ -327,9 +322,3 @@ if __name__ == "__main__":
         except:
             exit()
 
-
-# anything preceded by 0
-# 011111111111111111111111111111111111111111111111
-# any inline calc if ^ at end, operates like a stack. operator at end of string
-# maximum or min of stack
-# inline 5+5=10 calculations.
